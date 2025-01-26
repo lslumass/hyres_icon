@@ -21,7 +21,7 @@ def main():
     pdb_list = args.input_pdb_files
     outpsf = args.output_psf_file
     num_list = args.num_of_chains
-    print(num_list)
+    
     assert len(pdb_list) == len(num_list), "chain number list must have the same length as the pdb list (specified by the '-n' argument)"
     type_list = args.molecule_type
     assert len(pdb_list) == len(type_list), "molecule type list must have the same length as the pdb list (specified by the '-n' argument)"
