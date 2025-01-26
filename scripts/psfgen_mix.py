@@ -37,11 +37,11 @@ def main():
         mol_type = type_list[idx]
         if mol_type == 'P':
             for i in range(num):
-                segid = f"{chr(65+idx)}{i}" 
+                segid = f"P{chr(65+idx)}{i}" 
                 gen.add_segment(segid=segid, pdbfile=pdb)
         elif mol_type == 'R':
             for i in range(num):
-                segid = f"{chr(65+idx)}{i}" 
+                segid = f"R{chr(65+idx)}{i}" 
                 gen.add_segment(segid=segid, pdbfile=pdb, auto_angles=False, auto_dihedrals=False)
     gen.write_psf(filename=outpsf)
 
